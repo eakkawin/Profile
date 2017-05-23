@@ -26,14 +26,19 @@ export default class Profile extends React.Component{
                 <img src='../Picfile/Me.jpg' className='circlepic'/>
               </div>
               <div className='colum2'>
-                <h1>Earth (Jvom)</h1>
-                <h1>Name: {this.state.name}</h1>
+                <div className='textbox'>
+                  <h1 className='profilehead'>Profile</h1>
+                  <div className='text'>
+                    <h1>Earth (Jvom)</h1>
+                    <h1>Name: {this.state.name}</h1>
 
-                {/*<input type="text" className='inputtext' onChange={this.updateName.bind(this)} value={this.state.name} />*/}
-                <h1>Surname: {this.state.surname}</h1>
-                <h1>Age: {this.state.age}</h1>
-                <h1>Education: {this.state.edu}</h1>
-                <h1>GPA: {this.state.gpa}</h1>
+                    {/*<input type="text" className='inputtext' onChange={this.updateName.bind(this)} value={this.state.name} />*/}
+                    <h1>Surname: {this.state.surname}</h1>
+                    <h1>Age: {this.state.age}</h1>
+                    <h1>Education: {this.state.edu}</h1>
+                    <h1>GPA: {this.state.gpa}</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

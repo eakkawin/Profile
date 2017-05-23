@@ -1,84 +1,83 @@
+$myyellow: #FFD906
+*
+  -webkit-box-sizing:border-box
+  -moz-box-sizing:border-box
+  box-sizing:border-box
 body
-  background-color: #fff
   font-family: monospace
   display: grid
-  width: 100%
+  width: 480px
   padding: 0
   margin: 0
-
 div
   display: inline-block
 .container
   width: 100%
 .navbar
   background-color: #111111
-  width: 100%
+  width: 480px
   display: inline-block
   font-size: 1.5em
   position: fixed
   top: 0
   left: 0
+  .ucantseeme
+    color: #FFD906
+    padding: 20px
   .nav
-    margin: 0
-    padding: 0
-    width: 100%
-    ul
-      margin: 0
-      padding: 0
-      list-style-type: none
-    a
-      text-align: center
-      text-decoration: none
-      color: #FFD906
-      cursor: pointer
-    a:hover
-      color: #fff
-    a:active
-      color: #fff
-    li
-      display: inline-block
-      width: 10%
-      padding: 15px 10px
-      border-right: 1px solid #FFD906
-    li:hover
-      background-color: #FFD906
-    li:active
-      background-color: #FFD906
-
+    display: none
 .profile
-  width: 100%
-  padding: 50px 0px 0px 0px
-  margin-left: 0
+  width: 480px
+  margin: 0
+  background-color:#FFD906
   .colum
-    width: 100%
-    height: 750px
-    background-color: #fff
+    width: 480px
     .colum1
-      width: 37%
-      padding: 20px 0px 0px 100px
+      width: 480px
       float: left
+      background-color:#fff
     .colum2
-      width: 45%
-      font-size: 1.5em
+      width: 380px
+      font-size: 1em
       font-weight: 100
       background-color:#FFD906
-      padding: 50px
+      padding: 20px 50px
       float: left
 .circlepic
-  display: inline-block
-  width: 400px
+  display: block
+  width: 200px
   border-radius: 50%
   overflow: hidden
-  margin-top: 100px
+  margin: 100px auto 50px auto
   border: 5px solid #FFD906
-.inputtext
-  padding: 10px 5px
-  border-radius: 5px
-  border: 1px solid
+
+.skill
+  width: 480px
+  background-color: #FFD906
+.skilltext
+  float: left
+  width: 480px
+  background-color: #111
+  h1
+  font-size: 1.5em
+  font-weight: 100
+  text-align: center
+  padding: 20px 0px
+  color: #FFD906
+.skilllogo
+  width: 480px
+  .logorow
+    width: 480px
+    text-align: center
+.size
+  width: 100px
+  margin: 50px
+.size2
+  width: 125px
+  margin: 65px 50px 35px 50px
 
 .contact
-  height: 750px
-  width: 100%
+  width: 480px
   padding: 0
   margin-left: 0
   margin-bottom: 0
@@ -88,55 +87,416 @@ div
     float: left
     width: 100%
     text-align: center
-    font-size: 2em
-    font-weight: 500
-    padding: 40px 0px
+    font-size: 1.5em
+    font-weight: 100
     color: #FFD906
   .contactlist
-    width: 51%
+    width: 480px
+    margin-bottom: 50px
     .contacticon
-      width: 50%
+      width: 480px
 .sizeicon
-  width: 150px
+  width: 100px
   margin: 10px
 
-.skill
-  height: 760px
-  width: 100%
-  padding: 0
-  margin-left: 0
-  background-color: #FFD906
-.skilltext
-  float: left
-  width: 30%
-  height: 260px
-  background-color: #111
-  h1
-  font-size: 3em
-  font-weight: 500
-  text-align: center
-  padding: 250px 0px
-  color: #FFD906
-.skilllogo
-  width: 70%
-  .logorow
-    width: 100%
-.size
-  width: 100px
-  margin: 50px
-.size2
-  width: 125px
-  margin: 65px 50px 35px 50px
-
 .footer
-  text-align: center
-  width: 100%
+  width: 480px
   background-color: #111
-  height: 200px
+  height: 100px
   padding-top: 50px
   .text
     color: #FFD906
     font-weight: 100
     font-size: 1.2em
+    display: block
+    margin-top: 10px
+    text-align: center
+
+@media screen and (min-width: 480px)
+    body
+      width: 100%
+    .navbar
+      background-color: #111111
+      width: 100%
+      display: inline-block
+      font-size: 1.5em
+      position: fixed
+      top: 0
+      left: 0
+      .ucantseeme
+        display: none
+      .nav
+        margin: 0
+        padding: 0
+        width: 100%
+        display: inline-block
+        ul
+          margin: 0
+          padding: 0
+          list-style-type: none
+        a
+          text-align: center
+          text-decoration: none
+          color: #FFD906
+          cursor: pointer
+        a:hover
+          color: #fff
+        li
+          display: inline-block
+          width: 15%
+          padding: 15px 10px
+        li:hover
+          background-color: #FFD906
+
+    .profile
+      width: 100%
+      margin-left: 0
+      background-color: #ffd906
+      .colum
+        width: 100%
+        background-color: #fff
+        .colum1
+          width: 100%
+          text-align: center
+          float: left
+        .colum2
+          width: 100%
+          padding: 0
+          float: left
+          background-color: #fff
+          .textbox
+            width: 100%
+            background-color:#FFD906
+            margin-top: 50px
+            .text
+              font-size: 1em
+              font-weight: 100
+              padding: 0px 30px 60px 30px
+              margin: auto
+            .profilehead
+              display: block
+              padding-top: 30px
+              font-size: 4em
+              font-weight: 500
+              color: #fff
+              text-align: center
+    .circlepic
+      width: 250px
+      margin-top: 100px
+      border: 5px solid #FFD906
+    .inputtext
+      padding: 10px 5px
+      border-radius: 5px
+      border: 1px solid
+
+    .contact
+      width: 100%
+      padding: 0
+      margin-left: 0
+      margin-bottom: 0
+      background-color: #fff
+      text-align: center
+      .header
+        float: left
+        width: 100%
+        text-align: center
+        font-size: 2em
+        font-weight: 500
+        padding: 10px 0px
+        color: #FFD906
+      .contactlist
+        width: 100%
+        margin-bottom: 50px
+        .contacticon
+          width: 100%
+    .sizeicon
+      width: 130px
+      margin: 10px
+
+    .skill
+      width: 100%
+      text-align: center
+    .skilltext
+      float: left
+      width: 100%
+      background-color: #111
+      h1
+      font-size: 2em
+      font-weight: 300
+      color: #FFD906
+    .skilllogo
+      width: 90%
+      .logorow
+        width: 100%
+    .size
+      width: 100px
+      margin: 50px
+    .size2
+      width: 125px
+      margin: 65px 50px 35px 50px
+
+    .footer
+      text-align: center
+      width: 100%
+      background-color: #111
+      height: 150px
+      padding-top: 50px
+      .text
+        color: #FFD906
+        font-weight: 100
+        font-size: 1.2em
+        width: 100%
+        padding: 10px
+    .active
+      a
+        padding: 16px 0px 15px 0px
+        background-color: #FFD906
+      li
+        color: #fff
+@media screen and (min-width: 720px)
+    body
+      width: 100%
+    .navbar
+      background-color: #111111
+      width: 100%
+      display: inline-block
+      font-size: 1.5em
+      position: fixed
+      top: 0
+      left: 0
+      .ucantseeme
+        display: none
+      .nav
+        margin: 0
+        padding: 0
+        width: 100%
+        display: inline-block
+        ul
+          margin: 0
+          padding: 0
+          list-style-type: none
+        a
+          text-align: center
+          text-decoration: none
+          color: #FFD906
+          cursor: pointer
+        a:hover
+          color: #fff
+        li
+          display: inline-block
+          width: 15%
+          padding: 15px 10px
+        li:hover
+          background-color: #FFD906
+
+    .profile
+      width: 100%
+      margin-left: 0
+      background-color: #ffd906
+      .colum
+        width: 100%
+        background-color: #fff
+        .colum1
+          width: 100%
+          text-align: center
+          float: left
+        .colum2
+          width: 100%
+          padding: 0
+          float: left
+          background-color: #fff
+          .textbox
+            width: 100%
+            background-color:#FFD906
+            margin-top: 50px
+            .text
+              font-size: 1em
+              font-weight: 100
+              padding: 0px 30px 60px 30px
+              margin: auto
+            .profilehead
+              display: block
+              padding-top: 30px
+              font-size: 4em
+              font-weight: 500
+              color: #fff
+              text-align: center
+    .circlepic
+      width: 300px
+      margin-top: 100px
+      border: 5px solid #FFD906
+    .inputtext
+      padding: 10px 5px
+      border-radius: 5px
+      border: 1px solid
+
+    .contact
+      height: 750px
+      width: 100%
+      padding: 0
+      margin-left: 0
+      margin-bottom: 0
+      background-color: #fff
+      text-align: center
+      .header
+        float: left
+        width: 100%
+        text-align: center
+        font-size: 2em
+        font-weight: 500
+        padding: 10px 0px
+        color: #FFD906
+      .contactlist
+        width: 70%
+        .contacticon
+          width: 50%
+    .sizeicon
+      width: 130px
+      margin: 10px
+
+    .skill
+      width: 100%
+      text-align: center
+    .skilltext
+      float: left
+      width: 100%
+      background-color: #111
+      h1
+      font-size: 2em
+      font-weight: 300
+      color: #FFD906
+    .skilllogo
+      width: 90%
+      .logorow
+        width: 100%
+    .size
+      width: 100px
+      margin: 50px
+    .size2
+      width: 125px
+      margin: 65px 50px 35px 50px
+
+    .footer
+      text-align: center
+      width: 100%
+      background-color: #111
+      height: 150px
+      padding-top: 50px
+      .text
+        color: #FFD906
+        font-weight: 100
+        font-size: 1.2em
+        width: 100%
+        padding: 10px
+    .active
+      a
+        padding: 16px 0px 15px 0px
+        background-color: #FFD906
+      li
+        color: #fff
+@media screen and (min-width: 1024px)
+  body
     width: 100%
-    padding: 10px
+  .profile
+    width: 100%
+    background-color: #fff
+    .colum
+      width: 100%
+      height: 750px
+      background-color: #fff
+      .colum1
+        width: 40%
+        text-align: center
+        float: left
+      .colum2
+        width: 60%
+        padding: 0
+        float: left
+        background-color: #fff
+        .textbox
+          width: 80%
+          background-color:#FFD906
+          margin-top: 50px
+          .text
+            font-size: 1em
+            font-weight: 100
+            padding: 0px 30px 60px 30px
+            margin: auto
+          .profilehead
+            padding-top: 30px
+            font-size: 4em
+            font-weight: 500
+            color: #fff
+  .circlepic
+    width: 300px
+    margin-top: 220px
+    border: 5px solid #FFD906
+  .inputtext
+    padding: 10px 5px
+    border-radius: 5px
+    border: 1px solid
+
+  .contact
+    height: 750px
+    width: 100%
+    padding: 0
+    margin-left: 0
+    margin-bottom: 0
+    background-color: #fff
+    text-align: center
+    .header
+      float: left
+      width: 100%
+      text-align: center
+      font-size: 2em
+      font-weight: 500
+      padding: 10px 0px
+      color: #FFD906
+    .contactlist
+      width: 51%
+      .contacticon
+        width: 50%
+  .sizeicon
+    width: 130px
+    margin: 10px
+
+  .skill
+    height: 760px
+    width: 100%
+    padding: 0
+    margin-left: 0
+  .skilltext
+    float: left
+    width: 30%
+    height: 260px
+    background-color: #111
+    h1
+    font-size: 3em
+    font-weight: 500
+    text-align: center
+    padding: 250px 0px
+    color: #FFD906
+  .skilllogo
+    width: 70%
+    .logorow
+      width: 100%
+      text-align: left
+  .size
+    width: 100px
+    margin: 50px
+  .size2
+    width: 125px
+    margin: 65px 50px 35px 50px
+
+  .footer
+    text-align: center
+    width: 100%
+    background-color: #111
+    height: 150px
+    padding-top: 50px
+    .text
+      color: #FFD906
+      font-weight: 100
+      font-size: 1.2em
+      width: 100%
+      padding: 10px

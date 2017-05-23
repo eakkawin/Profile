@@ -42,10 +42,11 @@ export default class Nav extends React.Component{
     return(
       <div>
         <div className='navbar'>
+          <div className='ucantseeme'>My Profile</div>
           <ul className="nav">
-            <Link activeClass="active" to='profile' spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><a><li className="nav" >Profile</li></a></Link>
-            <Link to='skill' spy={true} smooth={true} offset={-50} duration={500}><a><li className="nav">Skill</li></a></Link>
-            <Link to='contact' spy={true} smooth={true} offset={-50} duration={500}><a><li className="nav">Contact</li></a></Link>
+            <Link activeClass="active" to='profile' spy={true} smooth={true} duration={500} onSetInactive={this.handleSetActive}><a><li>Profile</li></a></Link>
+            <Link activeClass="active" to='skill' spy={true} smooth={true} offset={-50} duration={500} onSetInactive={this.handleSetActive}><a><li>Skill</li></a></Link>
+            <Link activeClass="active" to='contact' spy={true} smooth={true} offset={-50} duration={500} onSetInactive={this.handleSetActive}><a><li>Contact</li></a></Link>
           </ul>
         </div>
       </div>
