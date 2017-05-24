@@ -23,7 +23,7 @@ export default class Profile extends React.Component{
           <div id='profile' className='profile'>
             <div className='colum'>
               <div className='colum1'>
-                <img src='../Picfile/Me.jpg' className='circlepic'/>
+                <img src='../Picfile/Me.png' className='circlepic'/>
               </div>
               <div className='colum2'>
                 <div className='textbox'>
